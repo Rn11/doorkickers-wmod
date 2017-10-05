@@ -2,9 +2,9 @@
 	<Firearm name="Hk420" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="15">
 		<Class value="Assaulter"/>
 		<MobilityModifiers moveSpeedLocalModifierPercent="-6" turnSpeedLocalModifierPercent="-3"/>
-		<RenderObject2D texture="data/textures/gui/customization/items/hk420.tga"/> <!-- this is image is shown in the GUI customization page -->
+		<RenderObject2D texture="data/textures/gui/customization/items/hk420.tga"/> <!-- this is image is shown in  the GUI customization page -->
 		<Skin binding="rifle"/>
-		<Description value="The Hk420 offers \n
+		<Description value="The Hk420 offers\n
 		great firepower and accuracy\n
 		while being versatile enough\n
 		to be used in close quarter combat."
