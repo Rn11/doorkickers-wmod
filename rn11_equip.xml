@@ -1,0 +1,444 @@
+<Equipment>
+	<Firearm name="Hk420" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="15">
+		<Class value="Assaulter"/>
+		<MobilityModifiers moveSpeedLocalModifierPercent="-6" turnSpeedLocalModifierPercent="-3"/>
+		<RenderObject2D texture="data/textures/gui/customization/items/hk420.tga"/> <!-- this is image is shown in the GUI customization page -->
+		<Skin binding="rifle"/>
+		<Description value="The Hk420 offers \n
+		great firepower and accuracy\n
+		while being versatile enough\n
+		to be used in close quarter combat."
+		/>
+
+		<ModifiableParams
+			muzzleDropDistanceMeters="0.45"
+			numPellets="1"
+			roundsPerMagazine="30"
+			roundsPerSecond="14"
+			damagePerBullet="12.9"
+			armorPiercingLevel="6"
+			spreadAt10Meters="0.17"
+			silenced="0"
+			shotSoundMeters="30"
+			closedBolt="1"
+			cyclicReload="0"
+			reloadTime="2100"
+			reloadEmptyTime="2400"
+			changeInTime="400"
+			changeOutTime="100"
+			readyTime="120"
+			guardTime="110"
+		/>
+
+		<Params
+			caliberInfoText="7.62×51mm"
+			operationInfoText="Full auto"
+		/>
+
+		<AttackTypes>
+			<AttackType name="SWAT_RapidFire"/>
+			<AttackType name="SWAT_RapidFireMed"/>
+			<AttackType name="SWAT_CarbineAimedFire"/>
+			<AttackType name="SWAT_CarbineAimedFireXX"/>
+		</AttackTypes>
+
+
+		<MuzzleFlash muzzlePointOffset="28 -6" textureAnimation="ANIM_FX_MUZZLE_FLASH_M4">
+			<BulletTrace durationMSec="550">
+				<RenderObject2D texture="data/textures/fx/bullet_trace.dds" sizeX="512" sizeY="8" blendMode="add_masked"/>
+			</BulletTrace>
+			<Flares>
+				<RenderObject2D texture="data/textures/fx/muzzle_flash_flare1.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+				<RenderObject2D texture="data/textures/fx/muzzle_flash_flare2.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+				<RenderObject2D texture="data/textures/fx/muzzle_flash_flare3.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+			</Flares>
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="SFX_M4_EQUIP"/>
+			<Unequip name="SFX_M4_UNEQP"/>
+			<Reload name="SFX_M4_RELD"/>
+			<ReloadEmpty name="SFX_M4_RELDEMPT"/>
+			<FireSingle name="SFX_M4_FIRE"/>
+			<FireSingle name="SFX_M4_FIREa"/>
+			<FireRapid name="SFX_M4_FIREa"/>
+			<FireRapid name="SFX_M4_FIREa"/>
+		</Sounds>
+	</Firearm>
+
+
+
+
+
+<!-- cky7 -->
+	<Firearm name="Cky7" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="15">
+		<Class value="Assaulter"/>
+	<Class value="Breacher"/>
+		<MobilityModifiers moveSpeedLocalModifierPercent="-9" turnSpeedLocalModifierPercent="-4"/>
+		<RenderObject2D texture="data/textures/gui/customization/items/cky7.tga"/> <!-- this is image is shown in the GUI customization page -->
+		<Skin binding="rifle"/>
+		<Description value="The Cky7 is a compact SMG-Inspired rifle.\n
+			It features an extra large\n
+			magazine that holds 35 bullets.\n
+			\n
+			The folded stock provides extra \n
+			manoeuvrability without having to\n
+			rely on small caliber SMGs."
+		/>
+
+		<ModifiableParams
+			muzzleDropDistanceMeters="0.25"
+			numPellets="1"
+			roundsPerMagazine="35"
+			roundsPerSecond="16"
+			damagePerBullet="12.1"
+			armorPiercingLevel="2"
+			spreadAt10Meters="0.27"
+			silenced="0"
+			shotSoundMeters="32"
+			closedBolt="1"
+			cyclicReload="0"
+			reloadTime="2100"
+			reloadEmptyTime="2350"
+			changeInTime="400"
+			changeOutTime="100"
+			readyTime="100"
+			guardTime="90"
+		/>
+
+		<Params
+			caliberInfoText="5.56×45mm"
+			operationInfoText="Full auto"
+		/>
+
+		<AttackTypes>
+			<AttackType name="SWAT_RapidFire"/>
+			<AttackType name="SWAT_RapidFireMed"/>
+			<AttackType name="SWAT_CarbineAimedFire"/>
+			<AttackType name="SWAT_CarbineAimedFireXX"/>
+		</AttackTypes>
+
+
+		<MuzzleFlash muzzlePointOffset="28 -6" textureAnimation="ANIM_FX_MUZZLE_FLASH_M4">
+			<BulletTrace durationMSec="550">
+				<RenderObject2D texture="data/textures/fx/bullet_trace.dds" sizeX="512" sizeY="8" blendMode="add_masked"/>
+			</BulletTrace>
+			<Flares>
+				<RenderObject2D texture="data/textures/fx/muzzle_flash_flare1.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+				<RenderObject2D texture="data/textures/fx/muzzle_flash_flare2.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+				<RenderObject2D texture="data/textures/fx/muzzle_flash_flare3.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+			</Flares>
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="SFX_M4_EQUIP"/>
+			<Unequip name="SFX_M4_UNEQP"/>
+			<Reload name="SFX_M4_RELD"/>
+			<ReloadEmpty name="SFX_M4_RELDEMPT"/>
+			<FireSingle name="SFX_M4_FIRE"/>
+			<FireSingle name="SFX_M4_FIREa"/>
+			<FireRapid name="SFX_M4_FIREa"/>
+			<FireRapid name="SFX_M4_FIREa"/>
+		</Sounds>
+	</Firearm>
+
+
+
+	<!-- mp5sdl -->
+		<Firearm name="MP5 SD-L" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="15">
+			<Class value="Assaulter"/>
+		<Class value="Breacher"/>
+		<Class value="Stealth"/>
+			<MobilityModifiers moveSpeedLocalModifierPercent="-6" turnSpeedLocalModifierPercent="-3"/>
+			<RenderObject2D texture="data/textures/gui/customization/items/mp5sdl.tga"/> <!-- this is image is shown in the GUI customization page -->
+			<Skin binding="rifle"/>
+			<Description value="It uses subsonic .45 ACP hollowpoint\n
+				ammunition.	This makes it almost impossible to\n
+				hear. The hollowpoint ammunition\n
+				ensures	that you will not shoot through\n
+				the bad guys and kill a hostage\n
+				instead. The downside is that it's\n
+				only efficient against soft\n
+				targets.\n
+				Sound travel range: 2 m"
+			/>
+
+			<ModifiableParams
+				muzzleDropDistanceMeters="0.34"
+				numPellets="1"
+				roundsPerMagazine="25"
+				roundsPerSecond="9"
+				damagePerBullet="12.4"
+				armorPiercingLevel="4"
+				spreadAt10Meters="0.06"
+				silenced="1"
+				shotSoundMeters="2"
+				closedBolt="1"
+				cyclicReload="0"
+				reloadTime="1200"
+				reloadEmptyTime="1650"
+				changeInTime="400"
+				changeOutTime="100"
+				readyTime="100"
+				guardTime="90"
+			/>
+
+			<Params
+				caliberInfoText="Subsonic .45 ACP HP"
+				operationInfoText="Full auto"
+			/>
+
+			<AttackTypes>
+				<AttackType name="SWAT_RapidFire"/>
+				<AttackType name="SWAT_RapidFireMed"/>
+				<AttackType name="SWAT_CarbineAimedFire"/>
+				<AttackType name="SWAT_CarbineAimedFireXX"/>
+			</AttackTypes>
+
+
+			<MuzzleFlash muzzlePointOffset="28 -6" textureAnimation="ANIM_FX_MUZZLE_FLASH_M4">
+				<BulletTrace durationMSec="550">
+					<RenderObject2D texture="data/textures/fx/bullet_trace.dds" sizeX="512" sizeY="8" blendMode="add_masked"/>
+				</BulletTrace>
+				<Flares>
+					<RenderObject2D texture="data/textures/fx/muzzle_flash_flare1.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+					<RenderObject2D texture="data/textures/fx/muzzle_flash_flare2.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+					<RenderObject2D texture="data/textures/fx/muzzle_flash_flare3.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+				</Flares>
+			</MuzzleFlash>
+
+			<Sounds> <!-- max 4 variants for each action -->
+				<Equip name="SFX_MP7SD_EQUIP"/>
+				<Unequip name="SFX_MP7SD_UNEQP"/>
+				<Reload name="SFX_MP5_RELD"/>
+				<ReloadEmpty name="SFX_MP5_RELDEMPT"/>
+				<FireSingle name="SFX_MP7SD_FIRE"/>
+				<FireSingle name="SFX_MP7SD_FIREa"/>
+				<FireRapid name="SFX_MP7SD_FIREa"/>
+				<FireRapid name="SFX_MP7SD_FIRE"/>
+			</Sounds>
+		</Firearm>
+
+
+
+
+
+		<!-- fn595 -->
+			<Firearm name="FN 595" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="15">
+				<Class value="Assaulter"/>
+				<Class value="Breacher"/>
+				<MobilityModifiers moveSpeedLocalModifierPercent="-10" turnSpeedLocalModifierPercent="-2"/>
+				<RenderObject2D texture="data/textures/gui/customization/items/fn595.tga"/> <!-- this is image is shown in the GUI customization page -->
+				<Skin binding="rifle"/>
+				<Description value="The FN 595 by FN Herstal\n
+					fires 7.62×51mm FMJ. It's long barrel makes\n
+					it a bit bulky but quite accurate.\n
+					It's slow RPM makes it easier to handle\n
+					the recoil, so you can always focus\n
+					on landing those shots."
+				/>
+
+				<ModifiableParams
+					muzzleDropDistanceMeters="0.52"
+					numPellets="1"
+					roundsPerMagazine="25"
+					roundsPerSecond="6"
+					damagePerBullet="15"
+					armorPiercingLevel="8"
+					spreadAt10Meters="0.08"
+					silenced="0"
+					shotSoundMeters="40"
+					closedBolt="1"
+					cyclicReload="0"
+					reloadTime="2500"
+					reloadEmptyTime="2850"
+					changeInTime="200"
+					changeOutTime="120"
+					readyTime="110"
+					guardTime="100"
+				/>
+
+				<Params
+					caliberInfoText="7.62×51mm"
+					operationInfoText="Full auto"
+				/>
+
+				<AttackTypes>
+					<AttackType name="SWAT_RapidFire"/>
+					<AttackType name="SWAT_RapidFireMed"/>
+					<AttackType name="SWAT_CarbineAimedFire"/>
+					<AttackType name="SWAT_CarbineAimedFireXX"/>
+				</AttackTypes>
+
+
+				<MuzzleFlash muzzlePointOffset="28 -6" textureAnimation="ANIM_FX_MUZZLE_FLASH_M4">
+					<BulletTrace durationMSec="550">
+						<RenderObject2D texture="data/textures/fx/bullet_trace.dds" sizeX="512" sizeY="8" blendMode="add_masked"/>
+					</BulletTrace>
+					<Flares>
+						<RenderObject2D texture="data/textures/fx/muzzle_flash_flare1.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+						<RenderObject2D texture="data/textures/fx/muzzle_flash_flare2.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+						<RenderObject2D texture="data/textures/fx/muzzle_flash_flare3.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+					</Flares>
+				</MuzzleFlash>
+
+				<Sounds> <!-- max 4 variants for each action -->
+					<Equip name="SFX_M4_EQUIP"/>
+					<Unequip name="SFX_M4_UNEQP"/>
+					<Reload name="SFX_M4_RELD"/>
+					<ReloadEmpty name="SFX_M4_RELDEMPT"/>
+					<FireSingle name="SFX_M4_FIRE"/>
+					<FireSingle name="SFX_M4_FIREa"/>
+					<FireRapid name="SFX_M4_FIREa"/>
+					<FireRapid name="SFX_M4_FIRE"/>
+				</Sounds>
+			</Firearm>
+
+
+
+
+
+			<!-- bak-15 -->
+				<Firearm name="BAK-15" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4">
+					<Class value="Assaulter"/>
+					<Class value="Breacher"/>
+					<MobilityModifiers moveSpeedLocalModifierPercent="0" turnSpeedLocalModifierPercent="0"/>
+					<RenderObject2D texture="data/textures/gui/customization/items/bak-15.tga"/> <!-- this is image is shown in the GUI customization page -->
+					<Skin binding="rifle"/>
+					<Description value="The infamous yet cheap\n
+						BAK-15 shoots caliber 5.56×45mm ammunition.\n
+						It has a fairly high RPM and is\n
+						excellent in CQB due to it's design.\n
+						\n
+						To sum it up, you get a huge bang\n
+						for the bak. Hah, these jokes never\n
+						get old."
+					/>
+
+					<ModifiableParams
+						muzzleDropDistanceMeters="0.22"
+						numPellets="1"
+						roundsPerMagazine="30"
+						roundsPerSecond="11"
+						damagePerBullet="12.1"
+						armorPiercingLevel="5"
+						spreadAt10Meters="0.1"
+						silenced="0"
+						shotSoundMeters="30"
+						closedBolt="1"
+						cyclicReload="0"
+						reloadTime="1500"
+						reloadEmptyTime="1850"
+						changeInTime="100"
+						changeOutTime="80"
+						readyTime="90"
+						guardTime="85"
+					/>
+
+					<Params
+						caliberInfoText="5.56×45mm"
+						operationInfoText="Full auto"
+					/>
+
+					<AttackTypes>
+						<AttackType name="SWAT_RapidFire"/>
+						<AttackType name="SWAT_RapidFireMed"/>
+						<AttackType name="SWAT_CarbineAimedFire"/>
+						<AttackType name="SWAT_CarbineAimedFireXX"/>
+					</AttackTypes>
+
+
+					<MuzzleFlash muzzlePointOffset="28 -6" textureAnimation="ANIM_FX_MUZZLE_FLASH_M4">
+						<BulletTrace durationMSec="550">
+							<RenderObject2D texture="data/textures/fx/bullet_trace.dds" sizeX="512" sizeY="8" blendMode="add_masked"/>
+						</BulletTrace>
+						<Flares>
+							<RenderObject2D texture="data/textures/fx/muzzle_flash_flare1.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+							<RenderObject2D texture="data/textures/fx/muzzle_flash_flare2.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+							<RenderObject2D texture="data/textures/fx/muzzle_flash_flare3.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+						</Flares>
+					</MuzzleFlash>
+
+					<Sounds> <!-- max 4 variants for each action -->
+						<Equip name="SFX_M4_EQUIP"/>
+						<Unequip name="SFX_M4_UNEQP"/>
+						<Reload name="SFX_M4_RELD"/>
+						<ReloadEmpty name="SFX_M4_RELDEMPT"/>
+						<FireSingle name="SFX_M4_FIRE"/>
+						<FireSingle name="SFX_M4_FIREa"/>
+						<FireRapid name="SFX_M4_FIREa"/>
+						<FireRapid name="SFX_M4_FIRE"/>
+					</Sounds>
+				</Firearm>
+
+
+
+				<!-- bak-15 -->
+					<Firearm name="Jericho Z" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="15">
+						<Class value="Assaulter"/>
+						<Class value="Breacher"/>
+						<MobilityModifiers moveSpeedLocalModifierPercent="-8" turnSpeedLocalModifierPercent="-5"/>
+						<RenderObject2D texture="data/textures/gui/customization/items/jericho_z.tga"/> <!-- this is image is shown in the GUI customization page -->
+						<Skin binding="rifle"/>
+						<Description value="Jericho Z. Spread fear among your \n
+							enemies with the extended 40\n
+							shot mag size."
+						/>
+
+						<ModifiableParams
+							muzzleDropDistanceMeters="1"
+							numPellets="1"
+							roundsPerMagazine="40"
+							roundsPerSecond="22"
+							damagePerBullet="12.9"
+							armorPiercingLevel="3"
+							spreadAt10Meters="0.224"
+							silenced="0"
+							shotSoundMeters="30"
+							closedBolt="1"
+							cyclicReload="0"
+							reloadTime="2300"
+							reloadEmptyTime="2450"
+							changeInTime="170"
+							changeOutTime="150"
+							readyTime="100"
+							guardTime="85"
+						/>
+
+						<Params
+							caliberInfoText="7.62×51mm"
+							operationInfoText="Full auto"
+						/>
+
+						<AttackTypes>
+							<AttackType name="SWAT_RapidFire"/>
+							<AttackType name="SWAT_RapidFireMed"/>
+							<AttackType name="SWAT_CarbineAimedFire"/>
+							<AttackType name="SWAT_CarbineAimedFireXX"/>
+						</AttackTypes>
+
+
+						<MuzzleFlash muzzlePointOffset="28 -6" textureAnimation="ANIM_FX_MUZZLE_FLASH_M4">
+							<BulletTrace durationMSec="550">
+								<RenderObject2D texture="data/textures/fx/bullet_trace.dds" sizeX="512" sizeY="8" blendMode="add_masked"/>
+							</BulletTrace>
+							<Flares>
+								<RenderObject2D texture="data/textures/fx/muzzle_flash_flare1.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+								<RenderObject2D texture="data/textures/fx/muzzle_flash_flare2.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+								<RenderObject2D texture="data/textures/fx/muzzle_flash_flare3.tga" sizeX="200" sizeY="200" layer="11" blendMode="add"/>
+							</Flares>
+						</MuzzleFlash>
+
+						<Sounds> <!-- max 4 variants for each action -->
+							<Equip name="SFX_M4_EQUIP"/>
+							<Unequip name="SFX_M4_UNEQP"/>
+							<Reload name="SFX_M4_RELD"/>
+							<ReloadEmpty name="SFX_M4_RELDEMPT"/>
+							<FireSingle name="SFX_M4_FIRE"/>
+							<FireSingle name="SFX_M4_FIREa"/>
+							<FireRapid name="SFX_M4_FIREa"/>
+							<FireRapid name="SFX_M4_FIRE"/>
+						</Sounds>
+					</Firearm>
+
+</Equipment>
